@@ -4,7 +4,7 @@ class Conexao{
 	
 	private $connection_string	= 'DRIVER={SQL Server};SERVER=SRV-BDGVDASA\SQL2012;DATABASE=Gvcollege_Facema';
 	private $user 				= 'sa';
-	private $pass				= '$@f17.1mA()RhUD$@%!';
+	private $pass				= 'XXXXXXXXXX'; //Sempre criptografar as suas senhas
 	
 	public function conectar(){
 		try{
