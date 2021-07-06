@@ -5,7 +5,7 @@ use Comtele\Services\TokenService;
 const API_KEY = ""; // Aqui você irá inserir a chave disponibilizada pelo Comtele
 
 $numero = isset($params['numero']) != '' ? $params['numero'] : ''; //parametro responsavel por pegar o numero inserido no input de numero inserido
-$token  = isset($params['token'])  != '' ? $params['token']  : '';
+$token  = isset($params['token'])  != '' ? $params['token']  : ''; // parametro para verificar o token enviado pelo comtele
 
 $tokenService = new TokenService(API_KEY);
 
