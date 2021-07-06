@@ -4,7 +4,7 @@ require_once "vendor/autoload.php";
 use Comtele\Services\TokenService;
 const API_KEY = ""; // Aqui você irá inserir a chave disponibilizada pelo Comtele
 
-$numero = isset($params['numero']) != '' ? $params['numero'] : '';
+$numero = isset($params['numero']) != '' ? $params['numero'] : ''; //parametro responsavel por pegar o numero inserido no input de numero inserido
 $token  = isset($params['token'])  != '' ? $params['token']  : '';
 
 $tokenService = new TokenService(API_KEY);
