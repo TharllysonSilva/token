@@ -8,7 +8,7 @@ if($usuario = unserialize($_SESSION['usrs'])){
 	$enquReposta	= isset($_POST['enquReposta']) 	&& trim($_POST['enquReposta'])  != ""  && $_POST['enquReposta'] 	!= "null"	? $_POST['enquReposta']	: 'NULL';
 /*
 	$cep		 = $_POST['cep'];
-	$rua		 = utf8_decode($_POST['rua']);
+	$rua		 = utf8_decode($_POST['rua']); parametros corrigidos
 	$nuber		 = $_POST['nuber'];
 	$bairro		 = utf8_decode($_POST['bairro']);
 	$cidade		 = utf8_decode($_POST['cidade']);
@@ -22,7 +22,7 @@ if($usuario = unserialize($_SESSION['usrs'])){
 	$email		 = utf8_decode($_POST['email']);
 	$comp		 = utf8_decode($_POST['comp']);	
 
-	//ARQUIVAR INFORMAÇÕES ANTERIORES
+	//ARQUIVAR INFORMAÃ‡Ã•ES ANTERIORES
 	$sql_ant = "UPDATE FCO_PESSOAATUALIZACAO
 				SET
 				ANT_CEP			 = PSE.CEP,
@@ -108,7 +108,7 @@ if($usuario = unserialize($_SESSION['usrs'])){
 	$sql1 = "UPDATE PAD_PESSOAENDERECO SET CEP = '$cep' WHERE CODIGOPESSOA = $codigoPessoa";
 	odbc_exec ($conexao, $sql1);
 
-	//UPDATE ENDEREÇO
+	//UPDATE ENDEREÃ‡O
 	$sql2 = "UPDATE PAD_PESSOAENDERECO SET ENDERECO = '$rua' WHERE CODIGOPESSOA = $codigoPessoa";
 	odbc_exec ($conexao, $sql2);
 
@@ -184,7 +184,7 @@ if($usuario = unserialize($_SESSION['usrs'])){
 		 odbc_exec ($conexao, $sql13);
 	} 
 
-	//UPDATE DATE DE ATUALIZAÇÃO E AUTERA O CRITERIO DE ATUALIZAÇÃO
+	//UPDATE DATE DE ATUALIZAÃ‡ÃƒO E AUTERA O CRITERIO DE ATUALIZAÃ‡ÃƒO
 	$sqlud = "UPDATE PAD_PESSOA SET dateAtualizacao = GETDATE(), Atualizacao = 0 WHERE CODIGOPESSOA = $codigoPessoa";
 	odbc_exec ($conexao, $sqlud);
 	
