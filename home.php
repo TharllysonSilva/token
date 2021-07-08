@@ -1,5 +1,5 @@
 <?php header("Content-Type: text/html; charset=utf-8",true); ?>
-<html lang="pt-br">
+<html lang="pt-br"> 
 <title>ATUALIZAÇÃO DE DADOS UNIFACEMA</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
@@ -9,8 +9,8 @@
 <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery/jquery.easyui.min.js"></script>
 <style>
-/*Formatação Geral*/
-* {
+/*Formatação Geral*/ /* parte de view*/
+* { 
     font-family:Verdana, Arial, Helvetica, sans-serif;
     font-size:8pt;
 }
