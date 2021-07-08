@@ -28,3 +28,5 @@ if($action == "validToken"){
 
 	
 ?>
+
+<!-- funciona cmo confirmador para verificação se realmente é o dono da conta que esta recebendo os dados --> 
